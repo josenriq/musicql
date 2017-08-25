@@ -1,0 +1,45 @@
+{
+  "name": "musicql",
+  "version": "1.0.0",
+  "description": "Play music with your friends",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "babel-node data/seeder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linktothapast/musicql.git"
+  },
+  "keywords": [
+    "graphql",
+    "musicql",
+    "spotify",
+    "youtube",
+    "soundcloud"
+  ],
+  "author": "@linktothapast Jose E. Bolanos <jenrique7@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linktothapast/musicql/issues"
+  },
+  "homepage": "https://github.com/linktothapast/musicql#readme",
+  "dependencies": {
+    "apollo-server-express": "^1.1.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "graphql-tools": "^1.2.1",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.8"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "graphql": "^0.10.5",
+    "nodemon": "^1.11.0"
+  }
+}
