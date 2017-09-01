@@ -19,6 +19,10 @@ const typeDefs = `
     room(name: String): Room
     songs: [Song]
   }
+  type Mutation {
+    addRoom(name: String): Room
+    deleteRoom(_id: String): Boolean
+  }
 `;
 
 export default makeExecutableSchema({ typeDefs, resolvers });
